@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <!-- Stilurile pentru designul de la Lab 1 -->
+    <link rel="stylesheet" href="/src/index.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>City Explorer</h1>
+        <nav class="menu">
+            <a href="#destinatii">Destinații</a>
+            <a href="#planifica">Planifică</a>
+            <a href="#recomandari">Recomandări</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Aici va rula partea de React în laboratoarele viitoare -->
+        <div id="root"></div>
+
+        <!-- Secțiunea Destinații (Lab 1) -->
+        <section id="destinatii">
+            <h2>Destinații</h2>
+            <div class="cards">
+                <article class="card featured">
+                    <h3>Lisabona</h3>
+                    <p>Portugalia</p>
+                    <p>Oraș vibrant plin de istorie și fado.</p>
+                    <p><strong>Durată:</strong> 4 zile</p>
+                </article>
+                <article class="card">
+                    <h3>Cluj-Napoca</h3>
+                    <p>România</p>
+                    <p>Inima Transilvaniei, oraș universitar dinamic.</p>
+                    <p><strong>Durată:</strong> 2 zile</p>
+                </article>
+                <article class="card">
+                    <h3>Porto</h3>
+                    <p>Portugalia</p>
+                    <p>Faimos pentru vinul de Porto și arhitectura pitorească.</p>
+                    <p><strong>Durată:</strong> 3 zile</p>
+                </article>
+                <article class="card">
+                    <h3>Brașov</h3>
+                    <p>România</p>
+                    <p>Oraș medieval la poalele Tiei Mici.</p>
+                    <p><strong>Durată:</strong> 2 zile</p>
+                </article>
+                <article class="card">
+                    <h3>Kyoto</h3>
+                    <p>Japonia</p>
+                    <p>Fosta capitală imperială cu temple zen minunate.</p>
+                    <p><strong>Durată:</strong> 6 zile</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Secțiunea Planifică (Lab 1) -->
+        <section id="planifica">
+            <h2>Planifică</h2>
+            <form class="plan-form">
+                <label for="name">Nume</label>
+                <input id="name" name="name" type="text" required>
+
+                <label for="destination">Destinație</label>
+                <select id="destination" name="destination">
+                    <option value="">Alege...</option>
+                    <option value="Lisabona">Lisabona</option>
+                    <option value="Cluj-Napoca">Cluj-Napoca</option>
+                    <option value="Porto">Porto</option>
+                    <option value="Brasov">Brașov</option>
+                    <option- value="Kyoto">Kyoto</option>
+                </select>
+
+                <label for="days">Număr de zile</label>
+                <input id="days" name="days" type="number" required>
+
+                <button type="submit">Planifică excursia</button>
+            </form>
+        </section>
+
+        <!-- Secțiunea Recomandări (Lab 1) -->
+        <section id="recomandari">
+            <h2>Recomandări</h2>
+            <ul>
+                <li>Verifică valabilitatea actelor de identitate înainte de plecare.</li>
+                <li>Rezervă biletele la principalele obiective turistice în avans.</li>
+                <li>Respectă obiceiurile locale și normele culturale ale destinației.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>City Explorer &copy; 2026 - Dumitru Radu Ștefan</p>
+    </footer>
+
+    <!-- ACEASTA LINIE ESTE OBLIGATORIE: pornește scriptul tău din main.jsx (Lab 2) -->
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
